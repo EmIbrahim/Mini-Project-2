@@ -1,0 +1,35 @@
+# ============================================================
+# Mini-Project 2 — SFT → DPO Pipeline Dependencies
+# Target: Kaggle T4 GPU (16 GB VRAM), Python 3.11
+# ============================================================
+
+# --- Core Training Stack ---
+torch>=2.2.0
+transformers>=4.51.0
+trl>=0.15.2
+peft>=0.14.0
+accelerate>=1.5.0
+bitsandbytes>=0.46.0
+
+# --- Unsloth (fast LoRA fine-tuning) ---
+unsloth
+unsloth_zoo
+xformers>=0.0.29
+triton
+cut_cross_entropy
+
+# --- Data & Tokenization ---
+datasets>=3.4.1
+sentencepiece
+protobuf
+huggingface_hub
+hf_transfer
+
+# --- Evaluation Metrics ---
+evaluate
+nltk
+bert_score>=0.3.13
+
+# --- Results & Reporting ---
+pandas>=2.0.0
+tabulate
